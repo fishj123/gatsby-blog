@@ -13,7 +13,7 @@ export default ({ data }) => {
         <div className="blogs-list">
           {data.allMarkdownRemark.edges.map(({node }) => 
 
-          <div className="blog-item-box">
+          <div className="blog-item-box" key={node.id}>
             <Link className="blog-link" to={node.fields.slug}>
               {node.frontmatter.title}
             </Link>
