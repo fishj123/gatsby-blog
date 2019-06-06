@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 
 const SideBar = () => {
   return (
@@ -17,11 +17,15 @@ const SideBar = () => {
       <div className="homepage-bottom-square">
         <h3>Sign Up</h3>
         <p className="form-text">Join the mailing list to get the latest blogs.</p>
-        <form>
+        <form action="https://gmail.us20.list-manage.com/subscribe/post?u=5143fe4e43d65fa5865d05076&amp;id=d82a3b0cac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <button style={{cursor: "pointer"}} id="join-mailing" type="submit">Join</button>
         </form>
+        <div>
+          
+        </div>
+                      
       </div>
     </React.Fragment>
   )
