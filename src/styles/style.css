@@ -182,7 +182,7 @@ h3 {
 
 .homepage-title {
   position: relative;
-  bottom: 12rem;
+  /* bottom: 12rem; */
   margin-left: 3rem;
 }
 
@@ -190,7 +190,8 @@ h3 {
   border: 2px solid black;
   margin-left: 6rem;
   position: relative;
-  bottom: 11rem;
+  top: 1rem;
+  /* bottom: 11rem; */
   text-align: center;
   max-width: 180px;
   padding: 1rem 2rem;
@@ -293,7 +294,7 @@ h3 {
   }
 
   .homepage-banner-text {
-    bottom: 40vh;
+    top: 10vh;
   }
 }
 
@@ -331,6 +332,7 @@ h3 {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding: 1rem;
   }
 
   h1 {
@@ -338,13 +340,13 @@ h3 {
   }
 
   .homepage-banner-text {
-    bottom: 50vh;
+    top: 10vh;
     color: white;
     text-align: center;
     width: 90%;
     margin: 0;
     padding: 0;
-    left: -4rem;
+    left: -2.5rem;
   }
 
   .read-latest-btn {
@@ -424,6 +426,10 @@ h3 {
   .blog-item-box {
     height: 20vh;
     margin: 1rem;
+  }
+
+  .blog-link {
+    font-size: 1rem;
   }
 }
 
