@@ -1,36 +1,48 @@
 import React from "react"
-import { Link } from 'gatsby'
 import Layout from "../components/layout"
 
-import { FaTwitter, FaEnvelope  } from 'react-icons/fa'
-
+import { FaTwitter, FaGithub } from "react-icons/fa"
 
 export default () => (
-    <Layout>
+  <Layout>
     <div className="about-container">
-        <div className="article-central-column">
-            <div className="title-box">
-                <h3>About.</h3>
-            </div>
-            <div className="article-text">
-                <p>reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <div className="social-links">
-                        <Link className="icon-links" to="#"><FaTwitter /></Link>
-                        <Link className="icon-links" to="#"><FaEnvelope /></Link>
-                        
-                    
-              </div>
-            </div>
-            </div>
+      <div className="article-central-column">
+        <div className="title-box">
+          <h3>About.</h3>
+        </div>
+        <div className="article-text">
+          <p>
+            Hi, welcome to my blog. I'm Jack, a JavaScript developer from
+            Edinburgh, Scotland. The blogs I post here are mainly short
+            tutorials aimed at beginner-level developers who are looking for
+            easy-to-digest information on various programming topics. The
+            tutorials I write are largely dictated by what I am learning at the
+            time as I think this is a useful way to solidify knowledge. The best
+            way to learn something is to teach it to someone else! If you like
+            my blogs then please follow me on Twitter where you can keep up to
+            date with the latest articles I post. You can find links to my
+            Twitter and Github below.
+          </p>
+          <div className="social-links">
+            <a
+              className="icon-links"
+              href="https://twitter.com/jckfshr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              className="icon-links"
+              href="https://github.com/fishj123"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    </Layout>
+  </Layout>
 )

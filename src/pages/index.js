@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
@@ -8,7 +7,7 @@ import SideBar from "../components/sidebar"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+
     <div className="homepage-container">
       <div className="homepage-hero-container">
         <div className="homepage-img-container">

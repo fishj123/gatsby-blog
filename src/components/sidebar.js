@@ -5,11 +5,7 @@ const SideBar = () => {
     <React.Fragment>
       <div className="homepage-top-square">
         <p className="intro-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse 
+          Welcome to my website. There's not much to it, just a simple blog built with Gatsby. Have a look around and read some of my articles, if you like them then follow me on Twitter to keep up to date with the latest posts.
         </p>
       </div>
       <div className="homepage-bottom-square">
