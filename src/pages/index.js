@@ -10,9 +10,9 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div className="homepage-container">
-      <div className="homepage-img-container">
-        <div>
-          <Img fluid={data.file.childImageSharp.fluid} alt="Orange sliced in half painted blue" />
+      <div className="homepage-hero-container">
+        <div className="homepage-img-container">
+          <Img fluid={data.file.childImageSharp.fluid} alt="Orange sliced in half painted blue" className="homepage-image"/>
         </div>
         <div className="homepage-banner-text">
           <h1 className="homepage-title">Personal blog.</h1>
@@ -28,6 +28,8 @@ const IndexPage = ({ data }) => (
       <SideBar />
     </div>
   </Layout>
+
+
 )
 
 export default IndexPage
