@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { FaTwitter, FaGithub } from "react-icons/fa"
 
 export default () => (
@@ -24,22 +24,22 @@ export default () => (
             Twitter and Github below.
           </p>
           <div className="social-links">
-            <a
+            <OutboundLink
               className="icon-links"
               href="https://twitter.com/jckfshr"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
-            <a
+              ><FaTwitter />
+            </OutboundLink>
+           
+            <OutboundLink
               className="icon-links"
               href="https://github.com/fishj123"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub />
-            </a>
+            </OutboundLink>
           </div>
         </div>
       </div>

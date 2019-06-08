@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-          <Helmet>
+          <Helmet>            
           <meta charSet="utf-8" />
           <title>Blog | Jack Fisher</title>
           <meta name="author" content="Jack Fisher" />

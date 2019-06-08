@@ -1,4 +1,6 @@
 import React from "react"
+// using OutboundLink for external links allows google to track the clicks
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const SideBar = () => {
   return (
@@ -21,25 +23,18 @@ const SideBar = () => {
         >
           <h3>Social Links</h3>
           <p style={{ marginBottom: "1rem" }}>
-            <a
+            <OutboundLink
               href="https://twitter.com/jckfshr"
               target="_blank"
               rel="noopener noreferrer"
             >
               Find me on Twitter
-            </a>
+            </OutboundLink>
           </p>
           <p>
-            <a href="mailto:jackfisher5882@gmail.com">Send me an email</a>
+            <OutboundLink href="mailto:jackfisher5882@gmail.com">Send me an email</OutboundLink>
           </p>
         </div>
-        {/* <h3>Sign Up</h3>
-        <p className="form-text">Join the mailing list to get the latest blogs.</p> */}
-        {/* <form action="https://gmail.us20.list-manage.com/subscribe/post?u=5143fe4e43d65fa5865d05076&amp;id=d82a3b0cac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <button style={{cursor: "pointer"}} id="join-mailing" type="submit">Join</button>
-        </form> */}
         <div />
       </div>
     </React.Fragment>
