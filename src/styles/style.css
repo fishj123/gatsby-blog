@@ -177,6 +177,7 @@ h3 {
 
 .homepage-banner-text {
   position: absolute;
+  top: 20vh;
 }
 
 .homepage-title {
