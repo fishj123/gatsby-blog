@@ -10,13 +10,11 @@ module.exports = {
       options: {
         trackingId: "UA-141698888-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
+        head: false,
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: false,
-        // Avoids sending pageview hits from custom paths
-        exclude: [],
+        respectDNT: true,
         // Enables Google Optimize using your container Id
         optimizeId: "",
         // Enables Google Optimize Experiment ID
