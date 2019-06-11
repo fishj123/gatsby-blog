@@ -13,7 +13,7 @@ export default ({ data }) => {
     <Layout>
         <Helmet>
         <title>{post.frontmatter.title}</title>
-        <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@jckfshr" />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta name="twitter:description" content="Jack Fisher is a front-end developer from Edinburgh. Follow his personal blog for tips and tricks as well as advice for beginners learning to code." />
