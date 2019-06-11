@@ -1,6 +1,6 @@
 import React from "react"
 // using OutboundLink for external links allows google to track the clicks
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 const SideBar = () => {
   return (

@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
 import { FaTwitter } from "react-icons/fa"
+import { OutboundLink } from 'gatsby-plugin-gtag'
+
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -21,14 +23,14 @@ export default ({ data }) => {
           <div className="article-text">
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
-          <a
+          <OutboundLink
             className="twitter-follow-me"
             href="https://twitter.com/jckfshr"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaTwitter /> Follow me on Twitter 
-          </a>
+          </OutboundLink>
         </div>
       </div>
     </Layout>

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 import { FaTwitter, FaGithub } from "react-icons/fa"
 
 export default () => (
