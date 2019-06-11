@@ -3,6 +3,7 @@ module.exports = {
     title: `Jack Fisher Blog`,
     description: `Hi, I'm Jack Fisher and I'm a front-end developer from Edinburgh. This is my personal blog where I write about things I've learned on my coding journey.`,
     author: `Jack Fisher`,
+    siteUrl: `https://www.blog.jackfisher.tech/`,
   },
   plugins: [
     {
@@ -35,6 +36,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
