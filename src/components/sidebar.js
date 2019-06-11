@@ -42,12 +42,7 @@ const SideBar = () => {
           method="POST"
           data-netlify="true"
         >
-          <input
-            name="email"
-            id="email"
-            type="text"
-            placeholder="Your email"
-          />
+          <input name="email" type="text" placeholder="Your email" />
           <button name="submit" type="submit">
             Submit
           </button>
