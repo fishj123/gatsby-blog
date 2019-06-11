@@ -1,6 +1,12 @@
 import React from "react"
 
 const SideBar = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hello")
+  }
+
   return (
     <React.Fragment>
       <div className="homepage-top-square">
@@ -19,6 +25,7 @@ const SideBar = () => {
           method="POST"
           netlify-honeypot="bot-field"
           data-netlify="true"
+          onSubmit={e => handleSubmit(e)}
         >
           <input
             style={{ display: "none" }}
