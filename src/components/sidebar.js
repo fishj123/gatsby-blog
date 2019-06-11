@@ -37,7 +37,6 @@ const SideBar = () => {
         </div> */}
         <h4 style={{ textAlign: "center" }}>Join my mailing list</h4>
         <form
-          action="/"
           name="mailing-list"
           method="POST"
           netlify-honeypot="bot-field"
@@ -49,7 +48,7 @@ const SideBar = () => {
             autoComplete="off"
           />
           <p>
-          <input name="name" id="name" type="text" placeholder="Your email" />
+          <input name="name" id="name" type="email" placeholder="Your email" />
           </p>
           <button name="submit" type="submit">
             Submit
