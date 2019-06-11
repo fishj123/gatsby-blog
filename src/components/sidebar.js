@@ -42,7 +42,6 @@ const SideBar = () => {
           method="POST"
           data-netlify="true"
         >
-          <input name="name" id="name" type="text" placeholder="Your name" />
           <input
             name="email"
             id="email"
