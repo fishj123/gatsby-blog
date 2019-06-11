@@ -48,7 +48,9 @@ const SideBar = () => {
             name="bot-field"
             autoComplete="off"
           />
+          <p>
           <input name="name" id="name" type="text" placeholder="Your email" />
+          </p>
           <button name="submit" type="submit">
             Submit
           </button>
