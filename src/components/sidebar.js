@@ -52,7 +52,7 @@ const SideBar = () => {
           <input
             name="email"
             id="email"
-            type="email"
+            type="text"
             placeholder="Your email"
           />
           <button name="submit" type="submit">
