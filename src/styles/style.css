@@ -553,3 +553,25 @@ form button {
     width: 60%;
   }
 }
+
+/* 404 styles */
+
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.page-not-found-container h1 {
+  font-size: 10vw;
+}
+
+.page-not-found-container a {
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
