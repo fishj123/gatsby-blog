@@ -1,7 +1,7 @@
 ---
 title: "My First Blog"
 date: "2019-06-06"
-description: "This is the meta description"
+description: "Welcome to my blog. My name is Jack and this is the first article on my new blog website."
 ---
 
 Welcome to my first blog. 

@@ -16,7 +16,7 @@ export default ({ data }) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@jckfshr" />
         <meta name="twitter:title" content={post.frontmatter.title} />
-        <meta name="twitter:description" content="Jack Fisher is a front-end developer from Edinburgh. Follow his personal blog for tips and tricks as well as advice for beginners learning to code." />
+        <meta name="twitter:description" content={post.frontmatter.description} />
         <meta name="twitter:image" content="https://ik.imagekit.io/fishj123/blogs/journal_ZmLh-g0iW.jpg" />
         </Helmet>
       <div className="blog-article-container">
@@ -49,6 +49,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MM, DD, YYYY")
+        description
         
       }
     }

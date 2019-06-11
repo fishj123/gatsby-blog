@@ -1,6 +1,7 @@
 ---
 title: "Why you should keep a coding journal"
 date: "2019-11-06"
+description: "Is a daily coding journal going to help you succeed with your goals? Here's why I believe so."
 ---
 
 I strongly believe that a daily journal is one of the best habits you can pick up if you are trying to improve your coding skills, especially as a beginner. In this short blog I would like to discuss my reasons for this and hopefully encourage some of you to start keeping a journal yourself.  
