@@ -40,9 +40,15 @@ const SideBar = () => {
           action="/"
           name="mailing-list"
           method="POST"
+          netlify-honeypot="bot-field"
           data-netlify="true"
         >
-          <input name="user-email" type="text" placeholder="Your email" />
+          <input
+            style={{ display: "none" }}
+            name="bot-field"
+            autoComplete="off"
+          />
+          <input name="name" id="name" type="text" placeholder="Your email" />
           <button name="submit" type="submit">
             Submit
           </button>
