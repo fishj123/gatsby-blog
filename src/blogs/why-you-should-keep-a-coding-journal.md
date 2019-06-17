@@ -1,6 +1,6 @@
 ---
 title: "Why you should keep a coding journal"
-date: "2019-11-06"
+date: "2019-06-11"
 description: "Is a daily coding journal going to help you succeed with your goals? Here's why I believe so."
 ---
 

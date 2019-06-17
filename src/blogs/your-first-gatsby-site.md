@@ -1,6 +1,6 @@
 ---
 title: "Create a Gatsby site in under 5 minutes"
-date: "2019-07-06"
+date: "2019-06-07"
 description: "Thinking about using Gatsby but don't know where to start? Get up and running in under 5 minutes with this guide."
 ---
 
