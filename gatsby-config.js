@@ -7,6 +7,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: "https://8309404d51464619906b9ea0bedf2691@sentry.io/1484720",
+      },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // your google analytics tracking id
