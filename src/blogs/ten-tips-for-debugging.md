@@ -41,7 +41,7 @@ It’s probably been said a thousand times that to become a good programmer you 
 <br><br>
 **Walk away**  
  
-This is the best piece of debugging advice I have. I can’t tell you how many times I’ve spent hours on one single error and then realised what the solution was once I stopped trying to debug it. Taking a 15-minute break to go for a walk does wonders for your mind. There’s something about letting your mind wonder that speeds up the process of landing on a solution. I now try to limit myself to no longer than one hour of debugging – if I can’t find the answer after an hour then I take a short break to clear my head before coming back to the computer. 
+This is the best piece of debugging advice I have. I can’t tell you how many times I’ve spent hours on one single error and then realised what the solution was once I stopped trying to debug it. Taking a 15-minute break to go for a walk does wanders for your mind. There’s something about letting your mind wonder that speeds up the process of landing on a solution. I now try to limit myself to no longer than one hour of debugging – if I can’t find the answer after an hour then I take a short break to clear my head before coming back to the computer. 
 <br><br>
 **Ask for help**  
 
