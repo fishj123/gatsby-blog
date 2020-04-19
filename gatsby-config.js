@@ -11,6 +11,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-plugin-styled-components`,
+            options: {
+              // Add any options here
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;
