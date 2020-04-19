@@ -1,13 +1,44 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+const StyledNav = styled.nav`
+  width: 100%;
+  max-width: 100vw;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  height: 3rem;
+  position: absolute;
+  z-index: 2;
+  font-weight: bold;
+`
+
+const Logo = styled.span`
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+`
+
+const Ul = styled.ul`
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+
+  & li {
+    padding: 0 2rem;
+  }
+`
 
 const Header = ({ siteTitle }) => (
-  <nav>
-    <span className="nav-logo">
+  <StyledNav>
+    <Logo>
       <Link to="/">Jack Fisher</Link>
-    </span>
-    <ul className="nav-items">
+    </Logo>
+    <Ul>
       <li>
         <Link to="/"> Home</Link>
       </li>
@@ -17,8 +48,8 @@ const Header = ({ siteTitle }) => (
       <li>
         <Link to="/about">About</Link>
       </li>
-    </ul>
-  </nav>
+    </Ul>
+  </StyledNav>
 )
 
 Header.propTypes = {

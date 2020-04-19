@@ -8,11 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet"
 import Header from "./header"
-import '../styles/style.css';
+import "../styles/style.css"
+import styled from "styled-components"
 
-// import "./layout.css"
+const C = styled.main`
+  padding-top: 3rem;
+  min-height: 100vh;
+  background: darkseagreen;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,16 +33,20 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-          <Helmet>            
+        <Helmet>
           <meta charSet="utf-8" />
           <title>Blog | Jack Fisher</title>
           <meta name="author" content="Jack Fisher" />
-          <meta name="description" content="JavaScript blog for developers and programmers who want to learn new things. I post regular tutorials that help you improve your skills" />
-          <meta name="keywords" content="JavaScript, Gatsby, Node, npm, learn, beginner, tutorial, blog, developer, programming" />
+          <meta
+            name="description"
+            content="JavaScript blog for developers and programmers who want to learn new things. I post regular tutorials that help you improve your skills"
+          />
+          <meta
+            name="keywords"
+            content="JavaScript, Gatsby, Node, npm, learn, beginner, tutorial, blog, developer, programming"
+          />
         </Helmet>
-          <main>{children}</main>
-
-        
+        <C>{children}</C>
       </>
     )}
   />

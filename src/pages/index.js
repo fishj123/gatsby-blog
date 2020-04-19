@@ -1,35 +1,52 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
-import SideBar from "../components/sidebar"
+import styled from "styled-components"
+import LatestArticle from "../components/home/latestArticle"
+import ArticleListItem from "../components/home/articleListItem"
 
-const IndexPage = ({ data }) => (
-  <Layout>
+const C = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  margin: auto;
 
-    <div className="homepage-container">
-      <div className="homepage-hero-container">
-        <div className="homepage-img-container">
-          <Img fluid={data.file.childImageSharp.fluid} alt="Orange sliced in half painted blue" className="homepage-image"/>
-        </div>
-        <div className="homepage-banner-text">
-          <h1 className="homepage-title">Personal blog.</h1>
-          <Link
-            to={data.allMarkdownRemark.edges[0].node.fields.slug}
-            className="read-latest-btn"
-            role="button"
-          >
-            Read Latest
-          </Link>
-        </div>
-      </div>
-      <SideBar />
-    </div>
-  </Layout>
+  & h1 {
+    margin-bottom: 65px;
+  }
 
+  & ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+`
 
-)
+const IndexPage = ({ data }) => {
+  const latestArticle = data.allMarkdownRemark.edges[0].node
 
+  const articles = data.allMarkdownRemark.edges
+  console.log(articles)
+
+  return (
+    <Layout>
+      {/* <Img fluid={data.file.childImageSharp.fluid} alt="Orange sliced in half painted blue" className="homepage-image"/> */}
+      <C>
+        <h1>Latest Articles</h1>
+        <LatestArticle latestArticle={latestArticle} />
+
+        <ul>
+          {articles.map(article => (
+            <ArticleListItem article={article} />
+          ))}
+        </ul>
+      </C>
+    </Layout>
+  )
+}
 export default IndexPage
 
 export const query = graphql`
@@ -45,6 +62,7 @@ export const query = graphql`
           fields {
             slug
           }
+          excerpt
         }
       }
     }
