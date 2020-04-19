@@ -51,7 +51,7 @@ export default ({ data }) => {
       <BlogC>
         <h1>{title}</h1>
         <small>{date}</small>
-        <div>
+        <div className="gatsby-highlight">
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
         <Footer>

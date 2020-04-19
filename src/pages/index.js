@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
-import LatestArticle from "../components/home/latestArticle"
 import ArticleListItem from "../components/home/articleListItem"
 
 export const C = styled.div`
@@ -36,6 +35,8 @@ const IndexPage = ({ data }) => {
   const latestArticle = data.allMarkdownRemark.edges[0].node
   const articles = [...data.allMarkdownRemark.edges].slice(1)
 
+  console.log(articles)
+
   return (
     <Layout>
       {/* <Img fluid={data.file.childImageSharp.fluid} alt="Orange sliced in half painted blue" className="homepage-image"/> */}
@@ -45,7 +46,10 @@ const IndexPage = ({ data }) => {
 
         <ul>
           {articles.map(article => (
-            <ArticleListItem article={article.node} />
+            <ArticleListItem
+              key={article.node.frontmatter.title}
+              article={article.node}
+            />
           ))}
         </ul>
       </C>

@@ -15,14 +15,12 @@ h5,
 h6,
 p,
 blockquote,
-pre,
 a,
 abbr,
 acronym,
 address,
 big,
 cite,
-code,
 del,
 dfn,
 em,
@@ -98,6 +96,37 @@ html {
   overflow-x: hidden;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+pre {
+  background-color: #fdf6e3;
+  color: #657b83;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 body {
