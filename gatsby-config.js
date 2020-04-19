@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jack Fisher Blog`,
-    description: `Hi, I'm Jack Fisher and I'm a front-end developer from Edinburgh. This is my personal blog where I write about things I've learned on my coding journey.`,
+    description: `Jack Fisher is a developer from Edinburgh, Scotland. This is my personal blog where I write about things I've learned on my coding journey.`,
     author: `Jack Fisher`,
     siteUrl: `https://www.blog.jackfisher.tech/`,
   },
