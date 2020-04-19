@@ -14,6 +14,9 @@ const StyledNav = styled.nav`
   position: absolute;
   z-index: 2;
   font-weight: bold;
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const Logo = styled.span`
@@ -21,6 +24,9 @@ const Logo = styled.span`
   font-size: 1.5rem;
   font-weight: bold;
   display: inline-block;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
 const Ul = styled.ul`
