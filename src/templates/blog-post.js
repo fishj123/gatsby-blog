@@ -1,43 +1,69 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet"
 import { FaTwitter } from "react-icons/fa"
-import { OutboundLink } from 'gatsby-plugin-gtag'
+import { OutboundLink } from "gatsby-plugin-gtag"
+import { C } from "../pages/index"
+import styled from "styled-components"
 
+const Footer = styled.div`
+  background: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+`
+
+const BlogC = styled(C)`
+  & h1 {
+    margin-bottom: 5px;
+  }
+
+  & small {
+    margin-bottom: 60px;
+  }
+`
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const title = post.frontmatter.title
+  const description = post.frontmatter.description
+  const date = post.frontmatter.date
 
   return (
     <Layout>
-        <Helmet>
-        <title>{post.frontmatter.title}</title>
+      <Helmet>
+        <title>{title}</title>
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@jckfshr" />
-        <meta name="twitter:title" content={post.frontmatter.title} />
-        <meta name="twitter:description" content={post.frontmatter.description} />
-        <meta name="twitter:image" content="https://ik.imagekit.io/fishj123/blogs/journal_ZmLh-g0iW.jpg" />
-        </Helmet>
-      <div className="blog-article-container">
-        <div className="article-central-column">
-          <div className="title-box">
-            <h3>{post.frontmatter.title}</h3>
-            <p className="date-posted">Date Posted: {post.frontmatter.date}</p>
-          </div>
-          <div className="article-text">
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          </div>
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta
+          name="twitter:image"
+          content="https://ik.imagekit.io/fishj123/blogs/journal_ZmLh-g0iW.jpg"
+        />
+      </Helmet>
+
+      <BlogC>
+        <h1>{title}</h1>
+        <small>{date}</small>
+        <div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+        <Footer>
           <OutboundLink
-            className="twitter-follow-me"
             href="https://twitter.com/jckfshr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter /> Follow me on Twitter 
+            <FaTwitter /> Follow me on Twitter
           </OutboundLink>
-        </div>
-      </div>
+        </Footer>
+      </BlogC>
     </Layout>
   )
 }
@@ -50,7 +76,6 @@ export const query = graphql`
         title
         date(formatString: "MM, DD, YYYY")
         description
-        
       }
     }
   }

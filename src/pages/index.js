@@ -5,7 +5,7 @@ import styled from "styled-components"
 import LatestArticle from "../components/home/latestArticle"
 import ArticleListItem from "../components/home/articleListItem"
 
-const C = styled.div`
+export const C = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +16,11 @@ const C = styled.div`
 
   & h1 {
     margin-bottom: 65px;
+  }
+
+  & img {
+    margin: auto;
+    display: block;
   }
 
   & ul {
