@@ -26,6 +26,13 @@ const BlogC = styled(C)`
   & small {
     margin-bottom: 60px;
   }
+
+  & .link {
+    color: blue;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    display: block;
+  }
 `
 
 export default ({ data }) => {
