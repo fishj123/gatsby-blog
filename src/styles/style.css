@@ -127,6 +127,7 @@ pre {
   hyphens: none;
   padding: 15px;
   border-radius: 5px;
+  overflow-x: scroll;
 }
 
 body {

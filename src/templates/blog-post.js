@@ -51,9 +51,10 @@ export default ({ data }) => {
       <BlogC>
         <h1>{title}</h1>
         <small>{date}</small>
-        <div className="gatsby-highlight">
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+        <div
+          style={{ width: "100%" }}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <Footer>
           <OutboundLink
             href="https://twitter.com/jckfshr"
