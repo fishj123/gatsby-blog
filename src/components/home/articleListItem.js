@@ -11,7 +11,10 @@ const LiInner = styled(Link)`
   width: 100%;
   padding: 20px;
   box-shadow: 1px 2px 4px -1px rgba(51, 51, 51, 1);
-  background: ${props => (props.latest ? "antiquewhite" : "#97d0ab")};
+  background: ${props =>
+    props.latest
+      ? props.theme.latestArticleBackground
+      : props.theme.articleBackground};
   display: flex;
   align-items: center;
   margin-bottom: 25px;
