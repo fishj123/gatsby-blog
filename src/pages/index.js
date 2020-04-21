@@ -16,6 +16,7 @@ export const C = styled.div`
   & h1 {
     margin-bottom: 65px;
     text-align: center;
+    color: ${props => props.theme.fontColor};
   }
 
   & img {

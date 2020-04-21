@@ -70,6 +70,24 @@ const ThemePicker = () => {
           >
             Pink
           </StyledButton>
+          <StyledButton
+            color="blue"
+            onClick={() => dispatch({ type: themeConstants.BLUE })}
+          >
+            Blue
+          </StyledButton>
+          <StyledButton
+            color="grey"
+            onClick={() => dispatch({ type: themeConstants.LIGHT })}
+          >
+            Light
+          </StyledButton>
+          <StyledButton
+            color="black"
+            onClick={() => dispatch({ type: themeConstants.DARK })}
+          >
+            Dark
+          </StyledButton>
         </StyledThemesContainer>
       </div>
     </StyledC>

@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import { OutboundLink } from 'gatsby-plugin-gtag'
+import { OutboundLink } from "gatsby-plugin-gtag"
 import { FaTwitter, FaGithub } from "react-icons/fa"
 
 export default () => (
   <Layout>
-    <div className="about-container">
+    {/* <div className="about-container">
       <div className="article-central-column">
         <div className="title-box">
           <h3>About.</h3>
@@ -43,6 +43,6 @@ export default () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   </Layout>
 )

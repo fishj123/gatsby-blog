@@ -40,6 +40,14 @@ const LiInner = styled(Link)`
     flex: 1;
   }
 
+  & h2 {
+    color: ${props => props.theme.fontColor};
+  }
+
+  & p {
+    color: ${props => props.theme.fontColor};
+  }
+
   @media (max-width: 900px) {
     flex-direction: column;
 

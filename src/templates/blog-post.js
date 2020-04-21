@@ -21,10 +21,16 @@ const Footer = styled.div`
 const BlogC = styled(C)`
   & h1 {
     margin-bottom: 5px;
+    color: ${props => props.theme.fontColor};
+  }
+
+  & p {
+    color: ${props => props.theme.fontColor};
   }
 
   & small {
     margin-bottom: 60px;
+    color: ${props => props.theme.fontColor};
   }
 
   & .link {
