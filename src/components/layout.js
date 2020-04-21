@@ -49,7 +49,7 @@ const Layout = ({ children }) => (
                 content="JavaScript, Gatsby, Node, npm, learn, beginner, tutorial, blog, developer, programming"
               />
             </Helmet>
-            <C>{children}</C>
+            {themeCtx.loadingTheme ? null : <C>{children}</C>}
           </ThemeProvider>
         )}
       </ThemeContext.Consumer>

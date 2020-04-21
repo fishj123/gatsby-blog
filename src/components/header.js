@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import { useThemeContext } from "../contexts/themeContext"
+import ThemePicker from "./themePicker"
 
 const StyledNav = styled.nav`
   width: 100%;
@@ -17,17 +17,6 @@ const StyledNav = styled.nav`
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
   }
-`
-
-const StyledThemeCircle = styled.div`
-  position: fixed;
-  top: 30px;
-  right: 15px;
-  background: white;
-  border-radius: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
 `
 
 const Logo = styled.span`
@@ -51,7 +40,6 @@ const Ul = styled.ul`
 `
 
 function Header({ siteTitle }) {
-  const { dispatch, themeConstants } = useThemeContext()
   return (
     <StyledNav>
       <Logo>
@@ -66,14 +54,7 @@ function Header({ siteTitle }) {
           <Link to="/about">About</Link>
         </li>
       </Ul>
-      <StyledThemeCircle>
-        <button onClick={() => dispatch({ type: themeConstants.GREEN })}>
-          Green
-        </button>
-        <button onClick={() => dispatch({ type: themeConstants.PINK })}>
-          pink
-        </button>
-      </StyledThemeCircle>
+      <ThemePicker />
     </StyledNav>
   )
 }
