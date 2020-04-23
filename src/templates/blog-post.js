@@ -19,18 +19,36 @@ const Footer = styled.div`
 `
 
 const BlogC = styled(C)`
-  & h1 {
-    margin-bottom: 5px;
+  & * {
     color: ${props => props.theme.fontColor};
   }
 
+  & h1 {
+    margin-bottom: 5px;
+  }
+
+  & h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
   & p {
-    color: ${props => props.theme.fontColor};
+    line-height: 1.8;
+  }
+
+  & ol {
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+
+  & li {
+    margin-bottom: 10px;
   }
 
   & small {
     margin-bottom: 60px;
-    color: ${props => props.theme.fontColor};
   }
 
   & .link {
@@ -38,6 +56,13 @@ const BlogC = styled(C)`
     text-decoration: underline;
     margin-bottom: 5px;
     display: block;
+  }
+
+  & code {
+    background: #fdf6e3;
+    border-radius: 3px;
+    padding: 3px;
+    color: #657b83;
   }
 `
 

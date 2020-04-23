@@ -1,7 +1,7 @@
 ---
 title: "How to get Create React App working in Internet Explorer"
 date: "2020-04-20"
-description: "This walk-through will show you the necessary steps to get Create React App working in Internet Explorer?"
+description: "This walk-through will show you the necessary steps to get Create React App working in Internet Explorer"
 ---
 
 Create React App is compatible with older browsers including Internet Explorer, but not out-of-the-box. There is a minor amount of setup required to get things working.
