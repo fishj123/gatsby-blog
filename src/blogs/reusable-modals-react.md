@@ -1,6 +1,6 @@
 ---
 title: "Creating scalable, reusable modals in React"
-date: "2023-04-20"
+date: "2020-04-23"
 description: "How can we create reusable modals that scale in React? This article describes one method."
 ---
 

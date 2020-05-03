@@ -19,6 +19,7 @@ const Footer = styled.div`
 `
 
 const BlogC = styled(C)`
+  padding-bottom: 90px;
   & * {
     color: ${props => props.theme.fontColor};
   }
@@ -64,6 +65,12 @@ const BlogC = styled(C)`
     padding: 3px;
     color: #657b83;
   }
+
+  & .warning {
+    background: #ff4f4f;
+    border-radius: 5px;
+    padding: 5px;
+  }
 `
 
 export default ({ data }) => {
@@ -93,7 +100,7 @@ export default ({ data }) => {
           style={{ width: "100%" }}
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <Footer>
+        {/* <Footer>
           <OutboundLink
             href="https://twitter.com/jckfshr"
             target="_blank"
@@ -101,7 +108,7 @@ export default ({ data }) => {
           >
             <FaTwitter /> Follow me on Twitter
           </OutboundLink>
-        </Footer>
+        </Footer> */}
       </BlogC>
     </Layout>
   )
