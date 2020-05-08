@@ -6,6 +6,7 @@ import { FaTwitter } from "react-icons/fa"
 import { OutboundLink } from "gatsby-plugin-gtag"
 import { C } from "../pages/index"
 import styled from "styled-components"
+import moment from "moment"
 
 const Footer = styled.div`
   background: white;
@@ -95,7 +96,7 @@ export default ({ data }) => {
 
       <BlogC>
         <h1>{title}</h1>
-        <small>{date}</small>
+        <small>{moment(date).format("DD-MMM-YYYY")}</small>
         <div
           style={{ width: "100%" }}
           dangerouslySetInnerHTML={{ __html: post.html }}
