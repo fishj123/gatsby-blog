@@ -117,7 +117,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,

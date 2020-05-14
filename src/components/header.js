@@ -50,9 +50,9 @@ function Header({ siteTitle }) {
           <Link to="/"> Home</Link>
         </li>
 
-        {/* <li>
+        <li>
           <Link to="/about">About</Link>
-        </li> */}
+        </li>
       </Ul>
       <ThemePicker />
     </StyledNav>
