@@ -56,8 +56,7 @@ const BlogC = styled(C)`
   & .link {
     color: blue;
     text-decoration: underline;
-    margin-bottom: 5px;
-    display: block;
+    background: white;
   }
 
   & code {

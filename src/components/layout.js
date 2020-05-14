@@ -42,11 +42,11 @@ const Layout = ({ children }) => (
               <meta name="author" content="Jack Fisher" />
               <meta
                 name="description"
-                content="JavaScript blog for developers and programmers who want to learn new things. I post regular tutorials that help you improve your skills"
+                content="Bitesize articles relating to JavaScript, React, and Typescript amongst other things."
               />
               <meta
                 name="keywords"
-                content="JavaScript, Gatsby, Node, npm, learn, beginner, tutorial, blog, developer, programming"
+                content="javascript, gatsby, node, typescript, learn, react, tutorial, blog, developer, programming"
               />
             </Helmet>
             {themeCtx.loadingTheme ? null : <C>{children}</C>}
