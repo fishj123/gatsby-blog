@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { Helmet } from "react-helmet"
 import { FaTwitter } from "react-icons/fa"
 import { OutboundLink } from "gatsby-plugin-gtag"
 import { C } from "../pages/index"
 import styled from "styled-components"
 import moment from "moment"
+import { HelmetProvider, Helmet } from "react-helmet-async"
 
 const Footer = styled.div`
   background: white;
@@ -81,17 +81,20 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@jckfshr" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta
-          name="twitter:image"
-          content="https://ik.imagekit.io/fishj123/splash_3G4W4PPpUPx.jpg"
-        />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>{title}</title>
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="@jckfshr" />
+          <meta name="twitter:title" content={title} />
+          <meta name="twitter:description" content={description} />
+          <meta
+            name="twitter:image"
+            content="https://ik.imagekit.io/fishj123/splash_3G4W4PPpUPx.jpg"
+          />
+        </Helmet>
+      </HelmetProvider>
 
       <BlogC>
         <h1>{title}</h1>
