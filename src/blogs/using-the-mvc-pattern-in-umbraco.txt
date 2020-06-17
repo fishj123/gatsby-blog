@@ -1,0 +1,11 @@
+---
+title: "Using the MVC pattern in Umbraco 8"
+date: "2020-06-08"
+description: "How to use the MVC pattern in Umbraco 8"
+---
+
+Umbraco is extremely beginner friendly, so much so that you can create and deploy an Umbraco website with little to no C# knowledge or experience. It allows you to create all your document types using the Umbraco back-office, and then it supplies some queries that can be used to query that data in your View files and display it on the page. This can be a perfect solution for those who want to get a website up and running quickly without getting bogged down in back-end code. However, this approach can become difficult to maintain in the long run. If you are working on a larger codebase you will quickly find yourself with a large bowl of Mamma's homemade spaghetti. So how can we avoid this? One way is to adopt the MVC or Model View Controller approach to an Umbraco website. This allows you to implement separation of concerns and silo off your codebase into clearly defined sections that are easier to maintain and build upon. Let's take a look at how you can achieve this.
+
+### Strongly Typed Models
+
+The first thing you are going to want to do is make sure that you are working with Strongly Type Models.

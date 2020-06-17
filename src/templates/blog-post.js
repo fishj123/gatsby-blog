@@ -89,7 +89,7 @@ export default ({ data }) => {
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content="https://ik.imagekit.io/fishj123/blogs/journal_ZmLh-g0iW.jpg"
+          content="https://ik.imagekit.io/fishj123/splash_3G4W4PPpUPx.jpg"
         />
       </Helmet>
 
