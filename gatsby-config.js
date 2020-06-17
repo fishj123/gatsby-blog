@@ -3,13 +3,14 @@ module.exports = {
     title: `Jack Fisher Blog`,
     description: `Jack Fisher is a developer from Edinburgh, Scotland. This is my personal blog where I write about things I've learned on my coding journey.`,
     author: `Jack Fisher`,
-    siteUrl: `https://www.blog.jackfisher.tech/`,
+    siteUrl: `https://www.jackfisher.tech/`,
   },
   plugins: [
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-social-cards`,
           {
             resolve: `gatsby-plugin-styled-components`,
             options: {
@@ -118,7 +119,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,

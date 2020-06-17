@@ -6,7 +6,7 @@ import { OutboundLink } from "gatsby-plugin-gtag"
 import { C } from "../pages/index"
 import styled from "styled-components"
 import moment from "moment"
-import { HelmetProvider, Helmet } from "react-helmet-async"
+import { Helmet } from "react-helmet"
 
 const Footer = styled.div`
   background: white;
@@ -73,28 +73,21 @@ const BlogC = styled(C)`
   }
 `
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const post = data.markdownRemark
   const title = post.frontmatter.title
   const description = post.frontmatter.description
   const date = post.frontmatter.date
 
   return (
-    <Layout>
-      <HelmetProvider>
-        <Helmet>
-          <title>{title}</title>
-          <meta property="og:type" content="website" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:creator" content="@jckfshr" />
-          <meta name="twitter:title" content={title} />
-          <meta name="twitter:description" content={description} />
-          <meta
-            name="twitter:image"
-            content="https://ik.imagekit.io/fishj123/splash_3G4W4PPpUPx.jpg"
-          />
-        </Helmet>
-      </HelmetProvider>
+    <Layout
+      pathname={location.pathname}
+      description={description}
+      title={title}
+    >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
 
       <BlogC>
         <h1>{title}</h1>

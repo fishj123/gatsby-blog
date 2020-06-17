@@ -20,13 +20,14 @@ const C = styled.main`
   background: ${props => props.theme.backgroundColor};
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pathname, description, title }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
             title
+            siteUrl
           }
         }
       }
@@ -42,11 +43,20 @@ const Layout = ({ children }) => (
               <meta name="author" content="Jack Fisher" />
               <meta
                 name="description"
-                content="Bitesize articles relating to JavaScript, React, and Typescript amongst other things."
+                content="Bitesize articles relating to JavaScript, C#, and Typescript amongst other things."
               />
               <meta
                 name="keywords"
-                content="javascript, gatsby, node, typescript, learn, react, tutorial, blog, developer, programming"
+                content="javascript, c#, .net, typescript, learn, react, tutorial, blog, developer, programming"
+              />
+              <meta property="og:type" content="website" />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:creator" content="@jckfshr" />
+              <meta name="twitter:title" content={title} />
+              <meta name="twitter:description" content={description} />
+              <meta
+                name="twitter:image"
+                content={`${data.site.siteMetadata.siteUrl}${pathname}twitter-card.jpg`}
               />
             </Helmet>
             {themeCtx.loadingTheme ? null : <C>{children}</C>}
