@@ -4,6 +4,9 @@ date: "2020-06-17"
 description: "How to use Strongly Typed Models in Umbraco 8"
 ---
 
+This article is aimed at beginner Umbraco developers who would like to get up and running quickly with strongly typed models. if you are an experienced Umbraco developer then you will probably already be familiar with the topics covered in this article.
+<br/>
+<br/>
 Using strongly typed models in Umbraco is an excellent way to prevent silly bugs and improve the quality of your codebase. I spent about a year working with Umbraco without strongly typed models before I realised what I was missing out on. If this sounds like you, this article could be beneficial to you. My aim is to quickly summarise how to setup Umbraco to enable strongly typed models in your project.
 <br/>
 <br/>
@@ -42,7 +45,7 @@ Here is how we can do it with strongly typed models:
 <br/>
 <br/>
  
-With strongly typed models, we can access the properties directly on the Model without having to go via the Value method. We get IntelliSense auto-completion as well so we will avoid making any typos. Overall it's just a much cleaner and safer way to write your code. So now you're asking how we can get this. We have to take a trip to our web.config file and update some values.
+With strongly typed models, we can access the properties directly on the Model without having to go via the Value method. What you might not have realised is that this strongly typed example is available out-of-the-box with Umbraco, however there is no IntelliSense, so you would be forgiven for thinking that this syntax isn't possible. I'm going to show you how we can get IntelliSense auto-completion as well so we will avoid making any typos. Overall this syntax provides a much cleaner and safer way to write your code. So now you're asking how we can get this. We have to take a trip to our web.config file and update some values.
 <br/>
 <br/>
  
